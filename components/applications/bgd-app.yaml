@@ -5,12 +5,12 @@ metadata:
   namespace: openshift-gitops
 spec:
   destination:
-    namespace: bgd
+    namespace: myawesomeproject
     server: https://kubernetes.default.svc
   project: default
   source:
     path: apps/bgd/overlays/bgd
-    repoURL: https://github.com/redhat-developer-demos/openshift-gitops-examples
+    repoURL: https://github.com/kubealex/openshift-gitops-examples
     targetRevision: main
   syncPolicy:
     automated:
